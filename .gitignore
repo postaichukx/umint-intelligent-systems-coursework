@@ -221,6 +221,6 @@ __marimo__/
 .streamlit/secrets.toml
 
 
-```gitignore
+
 data/
 __pycache__/

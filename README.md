@@ -22,18 +22,29 @@ xi ≥ 0
 ## Features
 
 Constrained investment-allocation optimization
-Three penalty methods:Dead penalty
+Three penalty methods:
+Dead penalty
+
 Step penalty
+
 Proportional penalty
 
 Elite selection and tournament selection
+
 Intermediate recombination crossover
+
 Additive mutation
+
 Feasible-population initialization
+
 Random immigrant generation after 60 generations without improvement
+
 Five independent runs for every penalty method
+
 Fitness convergence charts
+
 Comparison of the best result from each penalty method
+
 
 ## Genetic Algorithm Settings
 

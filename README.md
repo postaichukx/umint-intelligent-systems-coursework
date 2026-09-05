@@ -18,7 +18,9 @@ x1 + x2 ≤ 2,500,000
 x5 ≤ x4
 x3 + x4 ≤ 0.5(x1 + x2 + x3 + x4 + x5)
 xi ≥ 0
-Features
+```
+## Features
+
 Constrained investment-allocation optimization
 Three penalty methods:Dead penalty
 Step penalty
@@ -32,7 +34,9 @@ Random immigrant generation after 60 generations without improvement
 Five independent runs for every penalty method
 Fitness convergence charts
 Comparison of the best result from each penalty method
-Genetic Algorithm Settings
+
+## Genetic Algorithm Settings
+
 The default experiment uses:
 Population size: 300
 Generations: 600
@@ -41,20 +45,28 @@ Crossover alpha: 0.8
 Mutation rate: 0.1
 Mutation amplitude: 200,000
 Independent runs per method: 5
-Requirements
+
+## Requirements
+
 Python 3.10 or newer
 NumPy
 Matplotlib
+
 Install the dependencies:
 python -m pip install numpy matplotlib
 Run
 python main.py
 The program prints the best capital allocation, fitness value, and expected profit for each penalty method. It also displays convergence charts for all runs and a chart comparing the best runs.
-Project Structure
+
+## Project Structure
 .
 |-- main.py          # Optimization problem, constraints, and GA experiment
 `-- genetic_all.py   # Course-provided genetic algorithm helper functions
-Toolbox Note
+
+## Toolbox Note
+
 genetic_all.py provides helper functions for population generation, selection, intermediate crossover, and additive mutation.
-Notes
+
+## Notes
+
 This project was created for coursework in intelligent systems and genetic algorithms. The investment values are part of an academic optimization exercise and do not represent financial advice.

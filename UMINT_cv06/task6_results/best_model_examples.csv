@@ -1,0 +1,4 @@
+dataset_index,true_class,predicted_class,prob_normalny_pct,prob_podozrivy_pct,prob_patologicky_pct
+2,normalny (1),normalny (1),99.99821186065674,0.0017830388969741762,1.3271423959793083e-07
+10,podozrivy (2),podozrivy (2),0.09796160738915205,94.96201276779175,4.940018430352211
+5,patologicky (3),patologicky (3),0.020855174807365984,1.5352806076407433,98.44385981559753

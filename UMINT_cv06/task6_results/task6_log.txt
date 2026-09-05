@@ -1,0 +1,121 @@
+Shared hyperparameters: epochs=100, lr=0.001, batch_size=32, train_ratio=0.6
+Class counts: normalny (1)=1655, podozrivy (2)=295, patologicky (3)=176
+
+=== M1 | hidden_layers:(20,) 
+[M1] seed=40 | train=1275 | test=851
+  epoch   1/100 | train_loss=0.986098 | train_acc=55.22%
+  epoch  25/100 | train_loss=0.221959 | train_acc=91.29%
+  epoch  50/100 | train_loss=0.187123 | train_acc=92.47%
+  epoch  75/100 | train_loss=0.163727 | train_acc=93.18%
+  epoch 100/100 | train_loss=0.146680 | train_acc=94.20%
+[M1] seed=41 | train=1275 | test=851
+  epoch   1/100 | train_loss=0.944881 | train_acc=64.00%
+  epoch  25/100 | train_loss=0.217421 | train_acc=90.90%
+  epoch  50/100 | train_loss=0.181310 | train_acc=93.10%
+  epoch  75/100 | train_loss=0.151480 | train_acc=93.88%
+  epoch 100/100 | train_loss=0.125523 | train_acc=94.67%
+[M1] seed=42 | train=1275 | test=851
+  epoch   1/100 | train_loss=0.936631 | train_acc=66.67%
+  epoch  25/100 | train_loss=0.240257 | train_acc=90.12%
+  epoch  50/100 | train_loss=0.208335 | train_acc=91.22%
+  epoch  75/100 | train_loss=0.183604 | train_acc=92.16%
+  epoch 100/100 | train_loss=0.162644 | train_acc=93.02%
+[M1] seed=43 | train=1275 | test=851
+  epoch   1/100 | train_loss=1.017334 | train_acc=51.06%
+  epoch  25/100 | train_loss=0.215214 | train_acc=91.37%
+  epoch  50/100 | train_loss=0.173173 | train_acc=93.02%
+  epoch  75/100 | train_loss=0.148888 | train_acc=94.04%
+  epoch 100/100 | train_loss=0.128507 | train_acc=95.06%
+[M1] seed=44 | train=1275 | test=851
+  epoch   1/100 | train_loss=0.947821 | train_acc=68.24%
+  epoch  25/100 | train_loss=0.213935 | train_acc=91.84%
+  epoch  50/100 | train_loss=0.179817 | train_acc=92.55%
+  epoch  75/100 | train_loss=0.155814 | train_acc=93.41%
+  epoch 100/100 | train_loss=0.138482 | train_acc=94.12%
+
+=== M2 | hidden_layers:(60,) 
+[M2] seed=40 | train=1275 | test=851
+  epoch   1/100 | train_loss=0.912542 | train_acc=62.43%
+  epoch  25/100 | train_loss=0.196447 | train_acc=92.08%
+  epoch  50/100 | train_loss=0.158533 | train_acc=93.49%
+  epoch  75/100 | train_loss=0.128907 | train_acc=94.51%
+  epoch 100/100 | train_loss=0.108003 | train_acc=95.84%
+[M2] seed=41 | train=1275 | test=851
+  epoch   1/100 | train_loss=0.903800 | train_acc=68.00%
+  epoch  25/100 | train_loss=0.193212 | train_acc=91.69%
+  epoch  50/100 | train_loss=0.142422 | train_acc=94.27%
+  epoch  75/100 | train_loss=0.107782 | train_acc=96.31%
+  epoch 100/100 | train_loss=0.083145 | train_acc=97.10%
+[M2] seed=42 | train=1275 | test=851
+  epoch   1/100 | train_loss=0.953935 | train_acc=54.67%
+  epoch  25/100 | train_loss=0.214001 | train_acc=90.90%
+  epoch  50/100 | train_loss=0.164898 | train_acc=93.25%
+  epoch  75/100 | train_loss=0.131795 | train_acc=94.67%
+  epoch 100/100 | train_loss=0.108499 | train_acc=96.31%
+[M2] seed=43 | train=1275 | test=851
+  epoch   1/100 | train_loss=0.862006 | train_acc=70.75%
+  epoch  25/100 | train_loss=0.188171 | train_acc=92.24%
+  epoch  50/100 | train_loss=0.145975 | train_acc=94.90%
+  epoch  75/100 | train_loss=0.120243 | train_acc=95.29%
+  epoch 100/100 | train_loss=0.097601 | train_acc=96.16%
+[M2] seed=44 | train=1275 | test=851
+  epoch   1/100 | train_loss=0.971544 | train_acc=53.96%
+  epoch  25/100 | train_loss=0.195645 | train_acc=92.16%
+  epoch  50/100 | train_loss=0.158518 | train_acc=93.57%
+  epoch  75/100 | train_loss=0.126606 | train_acc=94.98%
+  epoch 100/100 | train_loss=0.105544 | train_acc=95.69%
+
+=== M3 | hidden_layers:(80, 40) 
+[M3] seed=40 | train=1275 | test=851
+  epoch   1/100 | train_loss=0.734698 | train_acc=80.24%
+  epoch  25/100 | train_loss=0.147746 | train_acc=93.02%
+  epoch  50/100 | train_loss=0.107857 | train_acc=95.22%
+  epoch  75/100 | train_loss=0.075510 | train_acc=96.31%
+  epoch 100/100 | train_loss=0.048070 | train_acc=98.27%
+[M3] seed=41 | train=1275 | test=851
+  epoch   1/100 | train_loss=0.693229 | train_acc=84.00%
+  epoch  25/100 | train_loss=0.156720 | train_acc=93.02%
+  epoch  50/100 | train_loss=0.091264 | train_acc=96.39%
+  epoch  75/100 | train_loss=0.056049 | train_acc=98.43%
+  epoch 100/100 | train_loss=0.034886 | train_acc=99.06%
+[M3] seed=42 | train=1275 | test=851
+  epoch   1/100 | train_loss=0.853759 | train_acc=64.71%
+  epoch  25/100 | train_loss=0.172136 | train_acc=92.31%
+  epoch  50/100 | train_loss=0.110244 | train_acc=95.29%
+  epoch  75/100 | train_loss=0.078104 | train_acc=96.71%
+  epoch 100/100 | train_loss=0.057656 | train_acc=97.33%
+[M3] seed=43 | train=1275 | test=851
+  epoch   1/100 | train_loss=0.702899 | train_acc=82.35%
+  epoch  25/100 | train_loss=0.142409 | train_acc=94.20%
+  epoch  50/100 | train_loss=0.101028 | train_acc=96.24%
+  epoch  75/100 | train_loss=0.068690 | train_acc=97.10%
+  epoch 100/100 | train_loss=0.046588 | train_acc=98.35%
+[M3] seed=44 | train=1275 | test=851
+  epoch   1/100 | train_loss=0.711182 | train_acc=77.02%
+  epoch  25/100 | train_loss=0.154203 | train_acc=93.57%
+  epoch  50/100 | train_loss=0.106243 | train_acc=95.84%
+  epoch  75/100 | train_loss=0.073404 | train_acc=97.25%
+  epoch 100/100 | train_loss=0.048870 | train_acc=98.20%
+
+=== SUMMARY BY STRUCTURE ===
+model_id hidden_layers  train_min_acc_pct  train_max_acc_pct  train_mean_acc_pct  test_min_acc_pct  test_max_acc_pct  test_mean_acc_pct
+      M1            20          93.019608          96.000000           94.462745         90.599295         92.714454          91.374853
+      M2            60          95.764706          97.490196           96.549020         90.011751         93.066980          91.797885
+      M3         80,40          98.352941          99.215686           98.650980         91.774383         94.242068          92.808461
+
+=== BEST RUN FROM EACH STRUCTURE ===
+model_id hidden_layers  best_seed  train_acc_pct  test_acc_pct  full_acc_pct  train_loss  test_loss  full_loss
+      M1            20         42      93.019608     92.714454     92.897460    0.158924   0.201511   0.175971
+      M2            60         42      96.470588     93.066980     95.108184    0.103891   0.210099   0.146404
+      M3         80,40         40      98.352941     94.242068     96.707432    0.043367   0.172624   0.095107
+
+Best structure by mean test accuracy: M3
+Best trained network: M3 seed=40 | test_acc=94.242%
+
+=== SENSITIVITY / SPECIFICITY FOR BEST TRAINED NETWORK ===
+          class  sensitivity_pct  specificity_pct
+   normalny (1)        97.432024        85.714286
+  podozrivy (2)        78.813559        97.544338
+patologicky (3)        90.140845        99.487179
+
+

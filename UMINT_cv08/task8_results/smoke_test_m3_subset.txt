@@ -1,0 +1,6 @@
+device=mps
+train_subset=320, val_subset=80, test_subset=80
+M3 MobileNetV2 | scratch | seed=40 | epoch 01/1 | train_loss=2.3376 (CE) | train_acc=7.81% | val_loss=2.3082 (CE) | val_acc=10.00%
+subset final | mode=scratch | train_acc=7.81% | val_acc=10.00% | test_acc=10.00%
+M3 MobileNetV2 | tl | seed=40 | epoch 01/1 | train_loss=2.3085 (CE) | train_acc=12.19% | val_loss=2.2999 (CE) | val_acc=10.00%
+subset final | mode=tl | train_acc=12.19% | val_acc=10.00% | test_acc=10.00%

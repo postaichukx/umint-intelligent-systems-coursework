@@ -1,0 +1,53 @@
+device=mps
+data_dir=/Users/gnomik7/PycharmProjects/UMINT_cv08/data
+results_dir=/Users/gnomik7/PycharmProjects/UMINT_cv08/task8_results
+config=max_epochs=1, optimizer=Adam, lr=0.0001, batch_size=128, early_stopping_patience=4, run_seeds=[40], augmented=False
+
+selected classes=apple_pie, caesar_salad, clam_chowder, edamame, french_fries, hamburger, hot_dog, ice_cream, sushi, waffles
+train samples=6000
+val samples=1500
+test samples=2500
+
+train class counts:
+{'apple_pie': 600, 'caesar_salad': 600, 'clam_chowder': 600, 'edamame': 600, 'french_fries': 600, 'hamburger': 600, 'hot_dog': 600, 'ice_cream': 600, 'sushi': 600, 'waffles': 600}
+val class counts:
+{'apple_pie': 150, 'caesar_salad': 150, 'clam_chowder': 150, 'edamame': 150, 'french_fries': 150, 'hamburger': 150, 'hot_dog': 150, 'ice_cream': 150, 'sushi': 150, 'waffles': 150}
+test class counts:
+{'apple_pie': 250, 'caesar_salad': 250, 'clam_chowder': 250, 'edamame': 250, 'french_fries': 250, 'hamburger': 250, 'hot_dog': 250, 'ice_cream': 250, 'sushi': 250, 'waffles': 250}
+
+=== M1 | AlexNet | scratch ===
+M1 AlexNet | scratch | seed=40 | epoch 01/1 | train_loss=2.1640 (CE) | train_acc=17.65% | val_loss=2.0123 (CE) | val_acc=27.47%
+final | seed=40 | train_acc=17.65% | val_acc=27.47% | test_acc=29.60%
+mean | train_acc=17.65% | val_acc=27.47% | test_acc=29.60% | test_loss=1.9810 | epochs=1.00
+
+=== M1 | AlexNet | tl ===
+M1 AlexNet | tl | seed=40 | epoch 01/1 | train_loss=1.1065 (CE) | train_acc=63.17% | val_loss=0.7577 (CE) | val_acc=74.60%
+final | seed=40 | train_acc=63.17% | val_acc=74.60% | test_acc=79.08%
+mean | train_acc=63.17% | val_acc=74.60% | test_acc=79.08% | test_loss=0.6170 | epochs=1.00
+
+=== M2 | ResNet18 | scratch ===
+M2 ResNet18 | scratch | seed=40 | epoch 01/1 | train_loss=1.9018 (CE) | train_acc=32.50% | val_loss=1.7810 (CE) | val_acc=37.00%
+final | seed=40 | train_acc=32.50% | val_acc=37.00% | test_acc=39.04%
+mean | train_acc=32.50% | val_acc=37.00% | test_acc=39.04% | test_loss=1.7436 | epochs=1.00
+
+=== M2 | ResNet18 | tl ===
+M2 ResNet18 | tl | seed=40 | epoch 01/1 | train_loss=2.3326 (CE) | train_acc=12.93% | val_loss=2.1544 (CE) | val_acc=24.87%
+final | seed=40 | train_acc=12.93% | val_acc=24.87% | test_acc=23.52%
+mean | train_acc=12.93% | val_acc=24.87% | test_acc=23.52% | test_loss=2.1485 | epochs=1.00
+
+=== M3 | MobileNetV2 | scratch ===
+Traceback (most recent call last):
+  File "<stdin>", line 31, in <module>
+  File "/Users/gnomik7/PycharmProjects/UMINT_cv08/main.py", line 522, in main
+    result = train_one_run(
+             ^^^^^^^^^^^^^^
+  File "/Users/gnomik7/PycharmProjects/UMINT_cv08/main.py", line 315, in train_one_run
+    loss.backward()
+  File "/Users/gnomik7/PycharmProjects/UMINT_cv07/.venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+    torch.autograd.backward(
+  File "/Users/gnomik7/PycharmProjects/UMINT_cv07/.venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+    _engine_run_backward(
+  File "/Users/gnomik7/PycharmProjects/UMINT_cv07/.venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

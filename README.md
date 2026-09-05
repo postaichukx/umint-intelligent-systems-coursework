@@ -1,6 +1,4 @@
-# Intelligent Systems Coursework Portfolio
-
-A portfolio of university projects completed for the Intelligent Systems course.
+# Intelligent Systems Coursework
 
 The projects cover genetic algorithms, neural networks, computer vision, transfer learning, and fuzzy logic control.
 

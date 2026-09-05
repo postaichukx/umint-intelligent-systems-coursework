@@ -1,86 +1,115 @@
-# Intelligent Systems Coursework
+# Food-101 Image Classification with Transfer Learning
 
-Selected projects and experiment utilities from an Intelligent Systems course. The repository contains MATLAB and Python work on traffic-light control, genetic algorithms, and neural-network training analysis.
+A university coursework project that compares convolutional neural-network architectures for food image classification using PyTorch and the Food-101 dataset.
 
-## Included Projects
+## Classification Task
 
-### Traffic Intersection Simulation
+The project uses 10 selected Food-101 classes:
 
-`UI25_uloha_9/` contains a MATLAB simulation of a traffic intersection with seven lanes.
+- Apple pie
+- Caesar salad
+- Clam chowder
+- Edamame
+- French fries
+- Hamburger
+- Hot dog
+- Ice cream
+- Sushi
+- Waffles
 
-The simulation supports:
+## Models
 
-- Six traffic scenarios, including directional traffic peaks
-- Fixed green-light intervals
-- Custom green-light intervals
-- Optional fuzzy-logic control
-- Animated intersection visualization
-- Graphs for lane occupancy and traffic-light states
+The project evaluates three architectures:
 
-Run `run_krizovatka.m` in MATLAB to configure and start the simulation.
+- `M1` — AlexNet
+- `M2` — ResNet18
+- `M3` — MobileNetV2
 
-### Genetic Algorithm Utilities
+Each architecture can be trained:
 
-`zdroje/genetic_all.py` contains reusable building blocks for genetic algorithms:
+- from scratch
+- with ImageNet pretrained weights using transfer learning
 
-- Schwefel-based objective function
-- Uniform search-space generation
-- Elitist, sorted, diversity-based, random, roulette-wheel, and tournament selection
-- Mutation operators
+The full experiment also tests data augmentation and runs models with multiple random seeds.
 
-### Neural-Network Training Plots
+## Dataset
 
-`UMINT_cv08_console_plots_20ep/` rebuilds training-history plots from a console log. The script reads loss and accuracy values from experiments and generates PNG charts for several model configurations.
+The program uses the Food-101 dataset through TorchVision.
+
+You do not need to upload the dataset to GitHub. On the first run, the script downloads it automatically into:
+
+```text
+data/food-101/
+```
+
+An internet connection and sufficient disk space are required.
+
+Dataset source: [Food-101 dataset](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/)
 
 ## Requirements
 
-### MATLAB Projects
-
-- MATLAB
-- Computer Vision Toolbox for the traffic visualization
-- Fuzzy Logic Toolbox when fuzzy control is enabled
-- The provided `scenarios.mat` and `crossroad.jpg` files
-
-### Python Utilities
-
 - Python 3.10 or newer
-- NumPy for genetic-algorithm utilities
-- Matplotlib for training-history plots
+- PyTorch
+- TorchVision
+- NumPy
+- Matplotlib
 
-Install the Python packages:
+Install the dependencies:
 
 ```bash
-python -m pip install numpy matplotlib
+pip install torch torchvision numpy matplotlib
 ```
 
-## Running the Traffic Simulation
-
-1. Open MATLAB.
-2. Change the current folder to `UI25_uloha_9`.
-3. Open `run_krizovatka.m`.
-4. Adjust the scenario, green-light intervals, fuzzy-control settings, and visualization flag.
-5. Run the script.
-
-## Rebuilding Training-History Plots
+## Run
 
 ```bash
-python UMINT_cv08_console_plots_20ep/rebuild_console_plots.py \
-  --input ulohy/console_ocakavane_20ep.txt \
-  --output-dir UMINT_cv08_console_plots_20ep
+python main.py
+```
+
+The default configuration uses the `quick_demo` profile:
+
+- MobileNetV2
+- transfer learning
+- one random seed
+- five training epochs
+
+To run the complete experiment, change this line in `main.py`:
+
+```python
+RUN_PROFILE = "quick_demo"
+```
+
+to:
+
+```python
+RUN_PROFILE = "full"
+```
+
+## Results
+
+The script saves training histories and prediction visualizations in:
+
+```text
+task8_results_quick/
+```
+
+The full profile saves results in:
+
+```text
+task8_results/
 ```
 
 ## Project Structure
 
 ```text
-.
-|-- UI25_uloha_9/                     # MATLAB traffic intersection simulation
-|-- UMINT_cv08_console_plots_20ep/    # Training-log plot reconstruction
-|-- zdroje/
-|   `-- genetic_all.py                # Genetic algorithm utilities
-|-- ulohy/                            # Assignment materials and experiment logs
-`-- prednasky/                        # Course reference materials
+UMINT_cv08/
+├── main.py
+├── rebuild_console_plots.py
+├── task8_results_quick/
+├── task8_results/
+└── README.md
 ```
 
 ## Notes
 
-This repository documents university coursework and learning experiments. Course documents and third-party materials should only be included when their redistribution is permitted.
+This project was created for educational purposes as part of university coursework.

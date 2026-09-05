@@ -49,35 +49,63 @@ Comparison of the best result from each penalty method
 ## Genetic Algorithm Settings
 
 The default experiment uses:
+
 Population size: 300
+
 Generations: 600
+
 Elite individuals: 6
+
 Crossover alpha: 0.8
+
 Mutation rate: 0.1
+
 Mutation amplitude: 200,000
+
 Independent runs per method: 5
+
 
 ## Requirements
 
 Python 3.10 or newer
+
 NumPy
+
 Matplotlib
+
 
 Install the dependencies:
 python -m pip install numpy matplotlib
+
 Run
+
 python main.py
-The program prints the best capital allocation, fitness value, and expected profit for each penalty method. It also displays convergence charts for all runs and a chart comparing the best runs.
+
+The program prints the best capital allocation, fitness value, and expected profit for each penalty method. It also displays
+
+convergence charts for all runs and a chart comparing the best runs.
+
 
 ## Project Structure
+
 .
+
 |-- main.py          # Optimization problem, constraints, and GA experiment
+
 `-- genetic_all.py   # Course-provided genetic algorithm helper functions
+
+
 
 ## Toolbox Note
 
+
+
 genetic_all.py provides helper functions for population generation, selection, intermediate crossover, and additive mutation.
+
+
 
 ## Notes
 
-This project was created for coursework in intelligent systems and genetic algorithms. The investment values are part of an academic optimization exercise and do not represent financial advice.
+
+This project was created for coursework in intelligent systems and genetic algorithms. The investment values are part of an academic 
+optimization exercise and do not represent financial advice.

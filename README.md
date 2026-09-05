@@ -90,7 +90,6 @@ The CSV files contain the number of cars in each lane at every simulation step. 
 ## Project Structure
 
 ```text
-UMINT_cv09/
 ├── main.py
 ├── python_crossroad/
 │   ├── data_loader.py
@@ -106,7 +105,6 @@ UMINT_cv09/
 
 The Python version does not require MATLAB or the MATLAB Fuzzy Logic Toolbox.
 
-The `ulohy/` directory contains the original MATLAB-related materials. Include it only if you wrote those files yourself or your instructor permits publishing them.
 
 ## Notes
 
